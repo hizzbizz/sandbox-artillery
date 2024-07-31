@@ -1,0 +1,23 @@
+{
+  "name": "artillery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "example:playwright": "artillery run ./examples/playwright-example.yml",
+    "example:playwright:cloud": "artillery run ./examples/playwright-example.yml --record --key ...",
+    "example": "artillery run ./examples/asciiart-load-test.yml",
+    "example:cloud": "artillery run ./examples/asciiart-load-test.yml --record --key ...",
+    "playwright:sandbox": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "artillery": "^2.0.18"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@types/node": "^22.0.0"
+  }
+}

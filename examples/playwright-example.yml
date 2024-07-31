@@ -1,0 +1,10 @@
+config:
+  target: "https://cavalier-cider.flywheelsites.com"
+  engines:
+    playwright:
+      trace: true
+  # Path to JavaScript file that defines Playwright test functions
+  processor: "./playwright-example.js"
+scenarios:
+  - engine: playwright
+    testFunction: "helloFlow"
